@@ -32,7 +32,7 @@ Connected to MockAPI backend for live CRUD operations.
 ## 📦 Install & Run Locally
 
 ```bash
-git clone https://github.com/KhushiJartarkar/Inkle-Frontend.git
+git clone https://github.com/KhushiJartarkar/Inkel-Frontend.git
 cd inkle-frontend
 npm install
 npm run dev
