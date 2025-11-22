@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌈 Custom Dashboard Theme */
+@layer base {
+  :root {
+    --background: 43 100% 96%; /* #FFF9EC */
+    --card: 28 100% 91%; /* #FFDCCC */
+    --primary: 352 95% 70%; /* #FB6376 */
+    --primary-foreground: 0 0% 100%;
+    --accent: 7 88% 83%; /* #FCB1A6 */
+    --foreground: 335 36% 21%; /* #5D2A42 */
+    --border: 335 36% 80%;
+    --radius: 0.65rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+/* ✨ Smooth Fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn .4s ease-out;
+}
+
+/* 📈 Table Row Slide */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-row {
+  animation: slideUp 0.25s ease-out forwards;
+}
+
+/* 🚀 Modal Scale Popup */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-scaleIn {
+  animation: scaleIn 0.25s ease-out forwards;
+}
